@@ -191,7 +191,7 @@ describe './lib/tic_tac_toe.rb' do
         allow($stdout).to receive(:puts)
 
         expect(game).to receive(:gets).and_return("invalid")
-        expect(game).to receive(:gets).and_return("1")
+        #expect(game).to receive(:gets).and_return("1")
 
         game.turn
       end
